@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ naslov }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            padding: 2rem;
+        }
+        .oseba-box {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="oseba-box">
+        <h1>{{ ime }} {{ priimek }}</h1>
+        <p><strong>Starost:</strong> {{ starost }} let</p>
+        <p><strong>Kraj rojstva:</strong> {{ kraj_rojstva }}</p>
+        <p><strong>Ime ulice: </strong> {{ ime_ulice }} {{ številka_ulice }}</p>
+        <a href="/">Osveži</a>
+    </div>
+</body>
+</html>
